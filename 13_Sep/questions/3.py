@@ -7,7 +7,7 @@ def findMissingElement(arr):
     total = sum(arr)
  
     # expected sum - actual sum
-    return (n + 1) + n * (n + 1) // 2 - total
+    return  (n + 1) * (n + 2) // 2 - total
  
  
 if __name__ == '__main__':
