@@ -1,12 +1,14 @@
-def solve(numheads,numlegs):
-    ns='No solutions!'
-    for i in range(numheads+1):
-        j=numheads-i
-        if 2*i+4*j==numlegs:
-            return i,j
-    return ns,ns
-
-numheads=35
-numlegs=94
-solutions=solve(numheads,numlegs)
-print(solutions)
+#for loop that traverses numbers from 1 to 100
+for i in range(1,101):
+  #check if number is divisible by both 3 and 5
+  if(i%3==0 and i%5==0):
+    print("FizzBuzz")
+  #check if number is divisible by 3
+  elif(i%3 == 0):
+    print("Fizz")
+  #check if number is divisible by 5
+  elif(i%5 == 0):
+    print("Buzz")
+  #if not divisible by either of them print the i
+  else:
+    print(i)
